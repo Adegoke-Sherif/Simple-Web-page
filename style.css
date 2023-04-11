@@ -1,76 +1,90 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.main-header {
-  background-image: url(./img/background-img.jpg);
-  height: 100vh;
-  background-position: center;
+body {
+  background-image: url(img/background-img.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.main-header h1 {
-  color: #3520d6;
-  font-size: 60px;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+  width: 600px;
+  height: 250px;
+  border-radius: 20px;
+  border: 2px solid #f67613;
+}
+.catspace {
+  text-align: center;
+  margin-top: 90px;
 }
 
-#subtext {
-  color: #fff;
-  line-height: 3em;
-}
-.button {
-  text-decoration: none;
-  border: 1px solid red;
-  border-radius: 5px;
+h1 {
   color: whitesmoke;
+  padding-bottom: 50px;
+  font-size: 50px;
+}
+
+h5 {
+  font-size: small;
+  color: rgb(116, 116, 116);
+  font-weight: 100;
+  margin-top: 30px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+#text {
+  color: rgb(150, 153, 151);
+  font-size: small;
+  font-weight: 200;
+}
+
+#sub {
+  color: dodgerblue;
+  line-height: 1.9;
+}
+
+.field {
+  width: 500px;
+  border-radius: 50px;
   padding: 10px;
+  margin-top: 30px;
+  border: 2px solid #fc7613;
 }
 
-.button:hover {
-  background-color: brown;
+.field i {
+  padding: 10px;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 30px;
 }
 
-.sub-section {
-  display: flex;
-  margin: 20px;
-  gap: 20px;
-}
-p {
-  margin: 20px;
-}
-.box-a {
-  background-color: #3520d6;
-  border-radius: 10px;
-  border: 1px solid grey;
-  box-shadow: 10px 10px 20px #aaa;
-  /* color: #fff; */
+input {
+  width: 400px;
+  border: none;
+  background-color: rgba(231, 229, 299, 0);
+  outline: none;
+  padding: 10px 0 10px 10px;
 }
 
-.box-b {
-  background-color: #d64e20;
-  border-radius: 10px;
-  border: 1px solid grey;
-  box-shadow: 10px 10px 20px #aaa;
-  /* color: #fff; */
-}
-
-.box-c {
-  background-color: #44d620;
-  border-radius: 10px;
-  border: 1px solid grey;
-  box-shadow: 10px 10px 20px #aaa;
-  /* color: #fff; */
-}
-
-footer {
-  background-color: brown;
-  /* text-align: center; */
-  display: flex;
-  justify-content: center;
-  color: whitesmoke;
-}
+/* input:focus {
+  border: 2px solid dodgerblue;
+} */
